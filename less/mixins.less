@@ -9,7 +9,7 @@
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
-.clearfix {
+@mixin clearfix {
   *zoom: 1;
   &:before,
   &:after {
@@ -23,7 +23,7 @@
 
 // Webkit-style focus
 // ------------------
-.tab-focus() {
+@mixin tab-focus() {
   // Default
   outline: thin dotted #333;
   // Webkit
@@ -33,7 +33,7 @@
 
 // Center-align a block level element
 // ----------------------------------
-.center-block() {
+@mixin center-block() {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +41,7 @@
 
 // IE7 inline-block
 // ----------------
-.ie7-inline-block() {
+@mixin ie7-inline-block() {
   *display: inline; /* IE7 inline-block hack */
   *zoom: 1;
 }
